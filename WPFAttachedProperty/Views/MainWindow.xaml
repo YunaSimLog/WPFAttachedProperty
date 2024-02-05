@@ -55,7 +55,8 @@
                  Text="{Binding OutputText }"/>
 
         <PasswordBox Grid.Column="1" Grid.Row="2"
-                     Background="CornflowerBlue"/>
+                     Background="CornflowerBlue"
+                     utils:PasswordBoxHelper.BoundPassword="{Binding InputPassword, Mode=TwoWay}"/>
         <TextBox Grid.Column="2" Grid.Row="2"
                  Background="CornflowerBlue"
                  Text="{Binding OutputPassword }"/>
