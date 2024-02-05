@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFAttachedProperty"
         mc:Ignorable="d"
+        xmlns:utils="clr-namespace:WPFAttachedProperty.Utils"
         Title="MainWindow" Height="450" Width="800">
     <Window.Resources>
         <Style x:Key="lb" TargetType="{x:Type Label}">
@@ -47,7 +48,8 @@
 
         <TextBox Grid.Column="1" Grid.Row="1"
                  Background="Beige"
-                 Text="{Binding InputText}"/>
+                 Text="{Binding InputText}"
+                 utils:TextBoxHelper.UseOnPropertyChanged="True"/>
         <TextBox Grid.Column="2" Grid.Row="1"
                  Background="Beige"
                  Text="{Binding OutputText }"/>
